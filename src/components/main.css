@@ -1,0 +1,160 @@
+/* component tasklist */
+.todolist-content{
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    width: 18%;
+}
+
+.todolist-content input{
+    position: relative;
+    background: transparent;
+    border: transparent;
+    outline: none;
+    padding: 20px 10px;
+    z-index: 3;
+    transition: all 0.5s;
+    border-bottom: 1px solid #45f3ff34;
+}
+
+.todolist-content .add, .remove{
+    font-size: 35px;
+}
+
+
+.todolist-content input:focus{
+    border-bottom: 1px solid #45f3ff;
+    transition: all 0.5s;
+}
+
+.todolist-content input:focus ~ .add{
+    color:  #45f3ff;
+    transition: all 0.5s;
+}
+
+.task-list ul{
+    padding: 0;
+    border-bottom: #45f3ff solid 1px;
+}
+
+.task-list ul li{
+    color: #45f3ff;
+}
+
+.task-list ul li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task-list ul li button{
+    color: #db0f0f75;
+    transition: all 0.5s;
+}
+
+.task-list ul li:hover button{
+    color: #db0f0f;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.form-value .add{
+    color: #45f3ff34;
+    transition: all 0.5s;
+}
+
+.form-value input{
+    width: 200px;
+}
+
+.content-list{
+    position: relative;
+    width: 100%;
+    
+}
+
+.content-list li{
+    word-wrap: break-word;
+}
+
+.content-list li p{
+    width: 100%;
+}
+
+.footer{
+    color: #45f3ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button{
+    color: #45f3ff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* component theme */
+.img-theme{
+    transition: all 1s;
+}
+
+.btn-theme #light{
+    position: absolute;
+    color: orange;
+    right: 0;
+}
+
+.btn-theme #darkblue{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #06091c;
+    right: 1%;
+    top: 2%;
+    cursor: pointer;
+}
+
+.btn-theme #darkred{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #992323;
+    right: 1%;
+    top: 2%;
+    cursor: pointer;
+}
+
+.btn-theme #light svg{
+    font-size: 50px;
+}
+
+.btn-theme #dark svg{
+    font-size: 50px;
+}
+
+.btn-theme svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-value{
+    display: flex;
+    align-items: center;
+}
+
+.form-value input{
+    color: #45f3ff;
+}
+
+.form-value input::placeholder{
+    color: #45f3ff34;
+}
+
+/* component watch */
+
+.watch p{
+    color: #45f3ff;
+    font-size: 3rem;
+}
